@@ -25,9 +25,9 @@ Sistema de Login em PHP e Javascript
    ## Habilitar o servidor web **Apache** e o servidor **MySQL**
    - tecla windows - abrir o xammp control panel
    -clique em start para apache
-   - =      =   =     =  MySQL
+   -clique em start para MySQL
    - verifique se apareceu porta 80 apache e 3306 MySQL
-   -    =      se ficou verde o apache e MySQL
+   - verifique  se ficou verde o apache e MySQL
     
   ## testar se esta pegando
    -abra o firefox azul e digite http://localhost/login
