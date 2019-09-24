@@ -35,10 +35,42 @@
                 </h2>
                 <form action="#" method="post" class="p-2" id="formLogin">
                     <div class="form-group">
-                        <input type="text" name="" id="" 
-                        aria-describedby="emailHelp" placeholder="Seu email">
-                        <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                        <input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Nome de Usuário" class="form-control">
                     </div>
+
+                    <div class="form-group">
+                        <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="custom-control custom checkbox">
+
+                            <input type="checkbox" nome="lembrar" id="lembrar" class="custom-control-input">
+
+                            <label for="lembrar" class="custom-control-label">
+                                Lembrar de Mim
+                            </label>
+
+                            <a href="#" class="float-right" id="btnEsqueci">
+                                Esqueci a Senha!
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value=":::ENTRAR:::" name="btnEntrar" class="btn btn-info btn-block">
+                    </div>
+
+                    <div class="form-group">
+                        <p class="text-center">
+                        Novo Usuário? <a href="#" id="btnRegistrar">
+                                Registre-se aqui!
+                            </a>
+                        </p>
+                    </div>
+
                 </form>
             </div>
         </section>
