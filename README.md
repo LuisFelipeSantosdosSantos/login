@@ -2,8 +2,11 @@
 Sistema de Login em PHP e Javascript
 
  # aula02 - 24/09/2019
- Commit e Push
-  
+ Layout Bootsrap para os formulários 
+  - formulário de login
+  - formulário de Recuperação de senha
+  - ~formulário de cadastro de novos usuários~ 
+
  # aula01 - 23/09/2019
   🌺🌹  começo a primavera⛅️🍂 
   Aula inicial, configuração do projeto no github.
