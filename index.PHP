@@ -110,7 +110,33 @@
             </div>
         </section>
         <!--Fim da Seção de Recuperação de Senha--->
+        <!-- Inicio do formulário de cadastro de novos usuários -->
 
+        <section class="row mt-5">
+            <div class="col-lg-4 offset-lg-4 bg-light rounded" id="caixaRegistro">
+                <h2 class="text-center mt-2">Registra-se</h2>
+                <form action="#" method="post" class="p-2" id="formRegistro">
+                    <div class="form-group">
+                        <input type="text" name="nomeCompleto" id="nomeCompleto" class="form-control" placeholder="Nome Completo">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" nome="nomeUsuario" id="nomeUsuario" class="form-control" placeholder="Nome Usuario">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" nome="emailUsuario" id="emailUsuario" class="form-control" placeholder="E-mail">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" nome="senhaUsuario" id="senhaUsuario" class="form-control" placeholder="senha">
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+
+        <!-- Final do formulário de cadastro de novos usuários -->
 
 
 
