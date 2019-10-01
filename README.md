@@ -3,12 +3,14 @@ Sistema de Login em PHP e Javascript
 
 
  # aula04 - 01/10/2019
-   - commit
+   - Validação COM HTML5
+   - Validação dos campos com jQuerry validate
+   
  # aula03 - 30/09/2019
   - formulário de cadastro de novos usuários
   - Formulário de Cadastro de novos usúarios
-  - Validação dos campos com jQuerry validate
-  - ~Ocultar e Mostrar os formulários com jQuerry~
+  - ~Validação dos campos com jQuerry validate~
+  - Ocultar e Mostrar os formulários com jQuerry~
  
  # aula02 - 24/09/2019
  Layout Bootsrap para os formulários 
