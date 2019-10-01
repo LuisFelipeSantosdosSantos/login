@@ -188,7 +188,7 @@
                 $("#caixaSenha").show(); //Mostrar nova senha
             });
 
-            $("btnJaRegistrado").click(function() {
+            $("#btnJaRegistrado").click(function() {
                 $("#caixaSenha").hide(); // ocultar gerar nova senha
                 $("#caixaLogin").show(); //mostrar login
             });
