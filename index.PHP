@@ -51,7 +51,7 @@
                         <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control" required minlength="6">
                     </div>
 
-                    <div class="form-group"mt-5>
+                    <div class="form-group"mt-4>
                         <div class="custom-control custom checkbox">
 
                             <input type="checkbox" nome="lembrar" id="lembrar" class="custom-control-input">
