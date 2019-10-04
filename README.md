@@ -1,7 +1,9 @@
 # login
 Sistema de Login em PHP e Javascript
 
-
+ # aula05 - 04/10/2019
+      Envio de dados no Front-end para o Beck-End,
+      métodos GET e POST. 
  # aula04 - 01/10/2019
    - Validação COM HTML5
    - Validação dos campos com jQuerry validate
