@@ -51,7 +51,7 @@
                         <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control" required minlength="6">
                     </div>
 
-                    <div class="form-group"mt-4>
+                    <div class="form-group" mt-4>
                         <div class="custom-control custom checkbox">
 
                             <input type="checkbox" nome="lembrar" id="lembrar" class="custom-control-input">
@@ -227,6 +227,32 @@
                 $("#caixaRegistro").hide();
             });
 
+            //cadastro de novo usuario
+            $("#btnRegistrar").click(function(e) {
+                if(document.querySelector("#formRegistro").checkValidity()){
+                    e.preventDefault();//nao abrir outra pagina 
+                    //envio dos dados via ajax
+                    $.ajax({
+                        url:'recebe_dados.php',
+                        method: 'post',
+                        data: $("#formRegistro").serialize()+'&action=cadastro',
+                        success:function(resposta){
+                            $("#alerta").show();
+                            $("#resultado").html(resposta);
+                        }
+                    });
+                }
+            });
+        }
+            return true;
+            //login
+            $("#btnEntrar").click(function(e) {
+
+            });
+            //Recuperaçao de senha
+            $("#btnGerar").click(function(e) {
+
+            });
 
         });
 
