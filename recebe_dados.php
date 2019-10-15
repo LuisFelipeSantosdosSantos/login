@@ -1,4 +1,13 @@
 <?php
+//conexao com o banco de dados
+require_once 'configBD.php';
+
+function verificar_entrada($entrada){
+    //filtrando a entrada
+    $saida = htmlspecialchars($entrada);
+    $saida = stripslashes($saida);
+    $saida = trim($saida);
+}
 //teste se existe a ação
 if (isset($_POST['action'])) {
     if ($_POST['action'] == 'cadastro') {
