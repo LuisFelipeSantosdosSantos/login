@@ -1,12 +1,13 @@
 # login
 Sistema de Login em PHP e Javascript
- # aula06 - 15/10/2019
-    -commit
- # aula05 - 07/10/2019
-   -commit
- # aula - 04/10/2019
+
+ # aula06 - 👨🏽‍🏫15/10/2019
+  Persistencia de dados no banco de dados👨🏽
+
+ # aula05 - 04/10/2019
       Envio de dados no Front-end para o Beck-End,
       métodos GET e POST. 
+
  # aula04 - 01/10/2019
    - Validação COM HTML5
    - Validação dos campos com jQuerry validate
@@ -56,8 +57,14 @@ Sistema de Login em PHP e Javascript
    - verifique se apareceu porta 80 apache e 3306 MySQL
    - verifique  se ficou verde o apache e MySQL
     
-  ## testar se esta pegando
+## testar se esta pegando
    -abra o firefox azul e digite http://localhost/login
     
- ## abrir o visual studio code 
+## abrir o visual studio code 
    - *abrir pasta* no VS code escolha C:\xampp\htdocs\login
+
+## Importa o banco de dados
+- Acessar no navegador http://localhost/phpmyadmin
+- Clicar em Importar
+- Selecionar o arquivo 127.0.0.1.sql e clique em executar
+- o banco deve ter sido importado corretamente
