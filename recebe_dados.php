@@ -46,6 +46,23 @@ if (isset($_POST['action'])) {
             $sql->execute();
             $resultado = $sql->get_result();
             $linha = $resultado->fetch_array(MYSQLI_ASSOC);
+
+            //VERIFICAndo a exist~encia do usuario no banco
+            if($linha['nomeDoUsuario'] == $nomeDoUsuario){
+                echo "<p class='text-danger'>Usuario Indisponivel </p>";
+            }elseif($linha['emailUsuario'] == $emailUsuario){
+                echo "<p class='text-danger'> E-mail indisponivel </p>";
+            }
+            //usuario pode ser cadastrado no banco de dados
+            $sql = $connect->prepare("INSERT into usuario (nomeDoUsuario, nomeCompleto, emailUsuario, senhaDoUsuario, dataCriado)
+            values(?, ?, ?, ?, ?)");
+            $sql->bind_param("sssss",$nomeDoUsuario, $nomeCompleto, $emailUsuario, $senhaCodificada, $dataCriado);
+            if($sql->execute()){
+                echo "<p class='text-success'>Usuario cadastrado</p>";
+            }else{
+                echo "<p class='text-danger'>Usuario não cadastrado</p>";
+                echo "<p class='text-danger'>algo deu errado</p>";
+            }
         }
 
     } else if ($_POST['action'] == 'login') {
