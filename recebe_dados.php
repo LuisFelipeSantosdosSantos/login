@@ -20,7 +20,7 @@ if (isset($_POST['action'])) {
         #echo "\n</pre>";
         //pegando dados do formulario
         $nomeCompleto = verificar_entrada($_POST['nomeCompleto']);
-        $nomeDoUsuario = verificar_entrada($_POST['nomeU=DoUsuario']);
+        $nomeDoUsuario = verificar_entrada($_POST['nomeDoUsuario']);
         $emailUsuario = verificar_entrada($_POST['emailUsuario']);
         $senhaDoUsuario = verificar_entrada($_POST['senhaDoUsuario']);
         $senhaUsuarioConfirmar = verificar_entrada($_POST['senhaUsuarioConfirmar']);
