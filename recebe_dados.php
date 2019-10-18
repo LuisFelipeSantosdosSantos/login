@@ -89,7 +89,3 @@ if (isset($_POST['action'])) {
     //a esse arquivo diretamente.
     header("location:index.php");
 }
-
-
-
-//btn btn-info btn-block
