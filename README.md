@@ -1,11 +1,12 @@
 # login
 Sistema de Login em PHP e Javascript
-
+ # aula07 - 18/10/2019
+ - commit
  # aula06 - 👨🏽‍🏫15/10/2019
-  Persistencia de dados no banco de dados👨🏽
+- Persistencia de dados no banco de dados👨🏽
 
  # aula05 - 04/10/2019
-      Envio de dados no Front-end para o Beck-End,
+  -   Envio de dados no Front-end para o Beck-End,
       métodos GET e POST. 
 
  # aula04 - 01/10/2019
