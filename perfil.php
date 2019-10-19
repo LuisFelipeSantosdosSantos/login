@@ -13,8 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light"
-    style="background-color: Chartreuse;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: Aqua;">
         <a class=" navbar-brand" href="#">Oakley Systems</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
