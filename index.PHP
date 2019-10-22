@@ -59,7 +59,6 @@
                         <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control" required minlength="6" value="<?=
                         isset($_COOKIE['senhaDoUsuario'])?$_COOKIE['senhaDoUsuario'] : "";
                         ?>">
-                        
 
                     </div>
 
