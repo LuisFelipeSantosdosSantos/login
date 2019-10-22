@@ -78,14 +78,20 @@ if (isset($_POST['action'])) {
         $sql->execute();
 
         $busca = $sql->fetch();
-        if($busca != null){
+        if ($busca != null) {
             $_SESSION['nomeDoUsuario'] = $nomeUsuario;
+
+            if (!empty($_POST['lembrar'])) {
+                //se lembrar não estiver vazio!
+                //ou seja, a pessoa quer ser lembrada!
+                setcookie("nomeDoUsuario", $nomeUsuario, time() + (60 * 60 * 24 * 30));
+                setcookie("senhaDoUsuario", $senhaUsuario, time() + (60 * 60 * 24 * 30));
+            } else {
+                // A pessoa não quer ser lembrada
+                setcookie("nomeDoUsuario", "");
+                setcookie("senhaDoUsuario", "");
+            }
             echo "ok";
-        }else{
-            echo "<p class='text-danger'>";
-            echo "Falhou a entrada no Sistema. Nome de Usuário ou senha inválidos";
-            echo "</p>";
-            exit();
         }
 
     } else if ($_POST['action'] == 'senha') {
