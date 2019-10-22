@@ -33,7 +33,7 @@ USE `senai`;
 
 DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE `usuario` (
-  `idUsuario` int(10) UNSIGNED NOT NULL auto_increment,
+  `idUsuario` int(10) UNSIGNED NOT NULL PRIMARY KEY auto_increment,
   `nomeCompleto` varchar(100) NOT NULL,
   `nomeDoUsuario` varchar(45) NOT NULL,
   `emailUsuario` varchar(45) NOT NULL,
@@ -49,7 +49,6 @@ CREATE TABLE `usuario` (
 -- Índices para tabela `usuario`
 --
 ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`idUsuario`),
   ADD UNIQUE KEY `nomeDoUsuario` (`nomeDoUsuario`),
   ADD UNIQUE KEY `emailUsuario` (`emailUsuario`);
 COMMIT;
