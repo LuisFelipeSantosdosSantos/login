@@ -1,7 +1,11 @@
+<?php
+require_once "session.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
+
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,6 +17,7 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: Aqua;">
         <a class=" navbar-brand" href="#">Oakley Systems</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
@@ -28,12 +33,12 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Perfil
+                        <?= $nomeDoUsuario ?>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Sobre</a>
                         <a class="dropdown-item" href="#">Fotos</a>
-                        <a class="dropdown-item" href="index.php">Sair</a>
+                        <a class="dropdown-item" href="sair.php">Sair</a>
                     </div>
                 </li>
             </ul>
@@ -45,15 +50,18 @@
             <h1 class="display-4">Bem-Vind@</h1>
 
             <h2 class="display-2 text-center rounded p-1 text-light" style="background-color:Aqua ">
-                Nome Completo
+                <?= $nomeCompleto ?>
             </h2>
 
             <h2 class="text-center">
-                E-mail do Usuário: luis@gmail.com
+                E-mail do Usuário:
+                <a href="mailto:<?= $emailUsuario ?>">
+                    <?= $emailUsuario ?>
+                </a>
             </h2>
 
-            <h2>
-                Registrado em: 18/10/2019
+            <h2 class="text-center">
+                Registrado em: <?php echo date('d/m/Y', strtotime($dataCriado)); ?>
             </h2>
         </div>
     </div>
