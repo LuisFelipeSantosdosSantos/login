@@ -1,6 +1,6 @@
 <?php
 //iniciando a sessão
-session_star();
+session_start();
 //conexao com o banco de dados
 require_once 'configBD.php';
 
