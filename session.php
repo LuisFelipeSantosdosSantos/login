@@ -10,7 +10,7 @@ if (isset($_SESSION['nomeDoUsuario'])) {
     $sql->bind_param("s",$usuario);
     $sql->execute();
     $resultado =  $sql->get_result();
-    $linha = $resultado->fetch_array("MYSQL_ASSOC");
+    $linha = $resultado->fetch_array(MYSQLI_ASSOC);
 
     $nomeDoUsuario = $linha ['nomeDoUsuario'];
     $nomeCompleto = $linha ['nomeCompleto'];
