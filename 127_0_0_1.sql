@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07-Out-2019 às 21:29
+-- Tempo de geração: 18-Nov-2019 às 20:16
 -- Versão do servidor: 10.3.16-MariaDB
 -- versão do PHP: 7.3.7
 
@@ -33,13 +33,22 @@ USE `senai`;
 
 DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE `usuario` (
-  `idUsuario` int(10) UNSIGNED NOT NULL PRIMARY KEY auto_increment,
+  `idUsuario` int(10) UNSIGNED NOT NULL,
   `nomeCompleto` varchar(100) NOT NULL,
   `nomeDoUsuario` varchar(45) NOT NULL,
   `emailUsuario` varchar(45) NOT NULL,
   `senhaDoUsuario` char(40) NOT NULL,
-  `dataCriado` date NOT NULL
+  `dataCriado` date NOT NULL,
+  `token` char(10) NOT NULL,
+  `tempoDeVida` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+
+--
+-- Extraindo dados da tabela `usuario`
+--
+
+INSERT INTO `usuario` (`idUsuario`, `nomeCompleto`, `nomeDoUsuario`, `emailUsuario`, `senhaDoUsuario`, `dataCriado`, `token`, `tempoDeVida`) VALUES
+(1, 'luis felipe', 'santos dos santos', 'luis@1234', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2019-11-18', '', '2019-11-18 22:09:41');
 
 --
 -- Índices para tabelas despejadas
@@ -49,8 +58,19 @@ CREATE TABLE `usuario` (
 -- Índices para tabela `usuario`
 --
 ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`idUsuario`),
   ADD UNIQUE KEY `nomeDoUsuario` (`nomeDoUsuario`),
   ADD UNIQUE KEY `emailUsuario` (`emailUsuario`);
+
+--
+-- AUTO_INCREMENT de tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `idUsuario` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
