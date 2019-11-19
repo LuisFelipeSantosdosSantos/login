@@ -50,25 +50,24 @@
                 <form action="#" method="post" class="p-2" id="formLogin">
                     <div class="form-group">
                         <input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Nome Usuário" class="form-control" required minlength="5" value="<?=
-                        isset($_COOKIE['nomeDoUsuario'])?$_COOKIE['nomeDoUsuario'] : "";
-                        ?>">
+                                                                                                                                                                    isset($_COOKIE['nomeDoUsuario']) ? $_COOKIE['nomeDoUsuario'] : "";
+                                                                                                                                                                ?>">
 
                     </div>
 
                     <div class="form-group">
                         <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control" required minlength="6" value="<?=
-                        isset($_COOKIE['senhaDoUsuario'])?$_COOKIE['senhaDoUsuario'] : "";
-                        ?>">
+                                                                                                                                                                isset($_COOKIE['senhaDoUsuario']) ? $_COOKIE['senhaDoUsuario'] : "";
+                                                                                                                                                            ?>">
 
                     </div>
 
                     <div class="form-group mt-3">
                         <div class="custom-control custom-checkbox">
 
-                            <input type="checkbox" name="lembrar" id="lembrar" class="custom-control-input"
-                            <?=
-                                isset($_COOKIE['senhaDoUsuario'])?"checked":"";
-                            ?>>
+                            <input type="checkbox" name="lembrar" id="lembrar" class="custom-control-input" <?=
+                                                                                                                isset($_COOKIE['senhaDoUsuario']) ? "checked" : "";
+                                                                                                            ?>>
                             <label for="lembrar" class="custom-control-label">
                                 Lembrar de mim.
                             </label>
@@ -104,30 +103,30 @@
                 <h2 class="text-center mt-2">
                     Gerar nova Senha
                 </h2>
-                <form action="#" method="post" id="formSenha" class="p-2"></form>
-                <div class="form-group">
-                    <small class="text-muted">
-                        Para gerar uma nova senha digite o seu E-mail. Clique no link gerado.
-                    </small>
-                </div>
+                <form action="#" method="post" id="formSenha" class="p-2">
+                    <div class="form-group">
+                        <small class="text-muted">
+                            Para gerar uma nova senha digite o seu E-mail. Clique no link gerado.
+                        </small>
+                    </div>
 
-                <div class="form-group">
-                    <input type="email" name="emailGerarSenha" id="emailGerarSenha" class="form-control" placeholder="E-mail de recuperação de senha" required>
+                    <div class="form-group">
+                        <input type="email" name="emailGerarSenha" id="emailGerarSenha" class="form-control" placeholder="E-mail de recuperação de senha" required>
 
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Gerar" name="btnGerar" id="btnGerar" class="btn btn-info btn-block">
-                </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Gerar" name="btnGerar" id="btnGerar" class="btn btn-info btn-block">
+                    </div>
 
-                <div class="form-group">
-                    <p class="text-center">
-                        Já registrado? <a href="#" id="btnJaRegistrado">
-                            Entrar por aqui.
-                        </a>
-                    </p>
+                    <div class="form-group">
+                        <p class="text-center">
+                            Já registrado? <a href="#" id="btnJaRegistrado">
+                                Entrar por aqui.
+                            </a>
+                        </p>
 
-
-                </div>
+                </form>
+            </div>
 
             </div>
         </section>

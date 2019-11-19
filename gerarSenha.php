@@ -1,3 +1,15 @@
+<?php
+if (isset($_GET['tokem']) && isset($_GET['email'])) {
+  require_once 'configBD.php';
+  $email = $_GET['email'];
+  $token = $_GET['token'];
+  $msg = "$email : $token";
+} else {
+  header("location: index.php");
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -34,9 +46,9 @@
             <input type="password" name="csenha" id="csenha" class="form-control" placeholder="Confirmar Nova Senha" required>
           </div>
 
-            <div class="form-group">
-              <input type="submit" value="Criar a nova senha" name="gerar" class="btn btn-block btn-dark">
-            </div>
+          <div class="form-group">
+            <input type="submit" value="Criar a nova senha" name="gerar" class="btn btn-block btn-dark">
+          </div>
         </form>
 
       </div>
