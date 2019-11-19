@@ -1,5 +1,5 @@
 <?php
-if (isset($_GET['tokem']) && isset($_GET['email'])) {
+if (isset($_GET['token']) && isset($_GET['email'])) {
   require_once 'configBD.php';
   $email = $_GET['email'];
   $token = $_GET['token'];

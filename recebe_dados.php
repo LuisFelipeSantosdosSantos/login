@@ -110,16 +110,19 @@ if (isset($_POST['action'])) {
         $sql = $connect->prepare("UPDATE usuario SET token=?, tempoDeVida=DATE_ADD(NOW(), INTERVAL 1 MINUTE) WHERE emailUsuario = ?");
         $sql->bind_param("ss", $token, $email);
         $sql->execute();
-        echo "Token no Banco de Dados!";
-        }
-        else{
+        //echo "Token no Banco de Dados!";
+        //if (isset($_GET['tokem']) && isset($_GET['email'])) {
+            $link = "<a href='gerarSenha.php?email=$email&token=$token'>Clique aqui para Gerar Nova Senha</a>";
+            echo $link; //este link deve ser enviado por e-mail
+        
+        }else{
             echo "E-mail não encontrado!";
         }
     }else {
             header("location:index.php");
         }
 
-} else {
+} else{
     //redirecionando para index.php, negando o acesso
     //a esse arquivo diretamente.
     header("location:index.php");
