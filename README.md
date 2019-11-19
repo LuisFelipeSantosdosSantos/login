@@ -1,10 +1,10 @@
 # login
 Sistema de Login em PHP e Javascript
- # aula11 -19/11/2019 
- - commit
- 
- # aula10 -18/11/2019
- - comit
+
+ # aula11 -19/11/2019
+ Geração de nova senha
+ # aula10 - 18/11/2019
+ preparação para geração de uma nova senha.
  # aula09 - 22/10/2019
   - auntentição do usuario completa
   - permissão de navegação atraves da SESSÃO
